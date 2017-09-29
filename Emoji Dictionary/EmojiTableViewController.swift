@@ -29,3 +29,7 @@ class EmojiTableViewController: UITableViewController {
     }
 
 }
+
+// Here is some commented shit.
+
+

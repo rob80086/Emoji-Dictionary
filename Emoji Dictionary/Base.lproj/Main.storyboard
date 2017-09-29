@@ -43,22 +43,22 @@
             </objects>
             <point key="canvasLocation" x="904.79999999999995" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Emoji Def View Controller-->
         <scene sceneID="znI-Zd-rzU">
             <objects>
-                <viewController id="vOL-Be-AVr" sceneMemberID="viewController">
+                <viewController id="vOL-Be-AVr" customClass="EmojiDefViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R9L-DO-N8l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🐶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTa-YJ-MFj">
-                                <rect key="frame" x="51.5" y="40" width="272" height="298.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTa-YJ-MFj">
+                                <rect key="frame" x="51.5" y="84" width="272" height="298.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="250"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A happy doggo with his tongue out!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJh-WI-3Bk">
-                                <rect key="frame" x="10" y="613" width="355" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A happy doggo with his tongue out!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJh-WI-3Bk">
+                                <rect key="frame" x="10" y="407.5" width="355" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,15 +66,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kJh-WI-3Bk" firstAttribute="leading" secondItem="IeI-BC-fr8" secondAttribute="leading" constant="10" id="4L5-oo-uLr"/>
-                            <constraint firstItem="IeI-BC-fr8" firstAttribute="bottom" secondItem="kJh-WI-3Bk" secondAttribute="bottom" constant="10" id="L0X-gJ-GwG"/>
-                            <constraint firstItem="IeI-BC-fr8" firstAttribute="trailing" secondItem="kJh-WI-3Bk" secondAttribute="trailing" constant="10" id="Pcx-yA-BJc"/>
+                            <constraint firstItem="kJh-WI-3Bk" firstAttribute="leading" secondItem="IeI-BC-fr8" secondAttribute="leading" constant="10" id="anE-Ea-pXZ"/>
                             <constraint firstItem="UTa-YJ-MFj" firstAttribute="top" secondItem="IeI-BC-fr8" secondAttribute="top" constant="20" id="bgD-cq-Ck6"/>
-                            <constraint firstItem="kJh-WI-3Bk" firstAttribute="top" secondItem="UTa-YJ-MFj" secondAttribute="bottom" constant="10" id="egs-22-58s"/>
+                            <constraint firstItem="kJh-WI-3Bk" firstAttribute="top" secondItem="UTa-YJ-MFj" secondAttribute="bottom" constant="25" id="lJr-Lv-7hL"/>
                             <constraint firstItem="UTa-YJ-MFj" firstAttribute="centerX" secondItem="R9L-DO-N8l" secondAttribute="centerX" id="rDb-uL-hqv"/>
+                            <constraint firstItem="IeI-BC-fr8" firstAttribute="trailing" secondItem="kJh-WI-3Bk" secondAttribute="trailing" constant="10" id="roP-Xd-i5n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IeI-BC-fr8"/>
                     </view>
+                    <connections>
+                        <outlet property="emojiDefLabel" destination="kJh-WI-3Bk" id="VJe-5o-JtV"/>
+                        <outlet property="emojiLabel" destination="UTa-YJ-MFj" id="6fE-A2-dzs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPl-cs-Hc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

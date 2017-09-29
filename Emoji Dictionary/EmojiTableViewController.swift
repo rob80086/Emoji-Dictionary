@@ -30,6 +30,14 @@ class EmojiTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ourSegue", sender: nil)
+    }
+    
+    
+    
+    
+    
 }
 
 // Here is some commented shit.

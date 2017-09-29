@@ -48,6 +48,6 @@ class EmojiTableViewController: UITableViewController {
     
 }
 
-// Here is some commented shit.
+// Here is a comment.
 
 

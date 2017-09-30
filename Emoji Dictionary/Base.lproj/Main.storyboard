@@ -59,6 +59,18 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A happy doggo with his tongue out!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJh-WI-3Bk">
                                 <rect key="frame" x="10" y="407.5" width="355" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth year: 2013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gx-Eq-faT">
+                                <rect key="frame" x="126" y="436" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Animals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mm-3p-Jo7">
+                                <rect key="frame" x="117.5" y="465" width="140" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,6 +78,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="3Mm-3p-Jo7" firstAttribute="centerX" secondItem="R9L-DO-N8l" secondAttribute="centerX" id="DMh-0T-UMe"/>
+                            <constraint firstItem="7gx-Eq-faT" firstAttribute="centerX" secondItem="R9L-DO-N8l" secondAttribute="centerX" id="H1m-fU-lup"/>
+                            <constraint firstItem="3Mm-3p-Jo7" firstAttribute="top" secondItem="7gx-Eq-faT" secondAttribute="bottom" constant="8" id="Pi6-V4-NLM"/>
+                            <constraint firstItem="7gx-Eq-faT" firstAttribute="top" secondItem="kJh-WI-3Bk" secondAttribute="bottom" constant="7.5" id="SD7-g7-UZI"/>
+                            <constraint firstItem="7gx-Eq-faT" firstAttribute="centerX" secondItem="R9L-DO-N8l" secondAttribute="centerX" id="ZiR-Wz-T2u"/>
                             <constraint firstItem="kJh-WI-3Bk" firstAttribute="leading" secondItem="IeI-BC-fr8" secondAttribute="leading" constant="10" id="anE-Ea-pXZ"/>
                             <constraint firstItem="UTa-YJ-MFj" firstAttribute="top" secondItem="IeI-BC-fr8" secondAttribute="top" constant="20" id="bgD-cq-Ck6"/>
                             <constraint firstItem="kJh-WI-3Bk" firstAttribute="top" secondItem="UTa-YJ-MFj" secondAttribute="bottom" constant="25" id="lJr-Lv-7hL"/>
@@ -75,6 +92,8 @@
                         <viewLayoutGuide key="safeArea" id="IeI-BC-fr8"/>
                     </view>
                     <connections>
+                        <outlet property="birthYear" destination="7gx-Eq-faT" id="aUf-qf-CvH"/>
+                        <outlet property="category" destination="3Mm-3p-Jo7" id="21n-Yk-fCX"/>
                         <outlet property="emojiDefLabel" destination="kJh-WI-3Bk" id="VJe-5o-JtV"/>
                         <outlet property="emojiLabel" destination="UTa-YJ-MFj" id="6fE-A2-dzs"/>
                     </connections>
